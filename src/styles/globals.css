@@ -2,26 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  background-image: url(https://uploads-ssl.webflow.com/5ba183ab9dd35e56746559f3/63ac6018268d183e806b8fa3_Kuro_Chroma_Grainy_Gradients_Abstract_Shapes_16.png);
+  background-repeat: no-repeat;
+  background-position-y: -300px;
+  background-position-x: -200px;
+  font-family: 'Anton', sans-serif;
+}
+.animate-slidein{
+  animation: slidein 1s;
+}
+.animate-slidein-delay{
+  animation: slidein 2s;
+}
+@keyframes slidein {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
   }
 }
+.none{
+  display: none;
+}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.right1 {
+  transform: translateX();
+}
+.active{
+  animation: animeact 3s;
+}
+@keyframes animeact{
+  0%{
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fixed{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 10px;
+}
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: rgb(238, 0, 255);
+  transform-origin: 0%;
+  z-index: 20;
 }
