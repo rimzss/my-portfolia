@@ -4,9 +4,12 @@ import BasicMenu from "./menu";
 
 const Nav = () => {
   return (
-    <div id="home" className="flex justify-between w-6/12  p-4 text-white">
+    <div
+      id="home"
+      className="flex w-full justify-between md:w-6/12  p-4 text-white"
+    >
       <h1 className="text-4xl">BILGUUN BATTUGS</h1>
-      <ul className="hidden gap-5 font-sans font-thin sm:flex">
+      <ul className="hidden gap-5 font-sans font-thin md:flex">
         <Link className="hover:border-b-2" href="http://localhost:3000/">
           Home
         </Link>
@@ -29,8 +32,11 @@ const Nav = () => {
         >
           <li>Instagram</li>
         </a>
+        <Link className="hover:border-b-2" href="../contact">
+          Contact
+        </Link>
       </ul>
-      <li className="block sm:hidden">
+      <li className="block md:hidden">
         <BasicMenu />
       </li>
     </div>

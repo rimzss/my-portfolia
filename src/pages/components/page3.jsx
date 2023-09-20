@@ -8,7 +8,6 @@ const Page3 = () => {
     console.log("working", moveClass);
     switch (moveClass) {
       case "-translate-x-full": {
-
         break;
       }
     }
@@ -21,7 +20,7 @@ const Page3 = () => {
       <div className="w-6/12">
         <div className="font-mono">
           <h1 className="font-bold">02</h1>
-          <h1 className="font-medium text-5xl text-pink-500">
+          <h1 className="font-medium md:text-5xl text-pink-500">
             GENSUS
             <span className="font-sans font-thin text-white">
               - World class UX for cutting edge data and business teams.
@@ -29,13 +28,14 @@ const Page3 = () => {
           </h1>
         </div>
         <div className="flex mt-16 relative z-0 overflow-hidden">
-          <button onClick={moveRight} className="absolute text-6xl top-2/4 z-10">
+          <button
+            onClick={moveRight}
+            className="absolute text-6xl top-2/4 z-10"
+          >
             &#60;
           </button>
-          {images.map((image)=>{
-            return (
-              <img src={image} alt="" />
-            )
+          {images.map((image) => {
+            return <img src={image} alt="" />;
           })}
           <button
             onClick={moveRight}
