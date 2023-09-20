@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import { motion, useScroll } from "framer-motion"
+import { motion, useScroll } from "framer-motion";
 import Head from "next/head";
 import Nav from "./components/nav";
 import Page1 from "./components/page1";
@@ -11,14 +11,14 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   const { scrollYProgress } = useScroll();
 
-  let [active, setActive]= useState("")
-  const reveal = ()=>{
-    setActive("active")
-    console.log("ACTIVE=",active)
-  }
-  const clear =()=>{
-    setActive("")
-  }
+  let [active, setActive] = useState("");
+  const reveal = () => {
+    setActive("active");
+    console.log("ACTIVE=", active);
+  };
+  const clear = () => {
+    setActive("");
+  };
   return (
     <>
       <Head>
@@ -28,18 +28,20 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
           rel="stylesheet"
         />
+        <title>@Rimzss·Home</title>
       </Head>
       <main>
-      <motion.div
-        className="progress-bar"
-        style={{ scaleX: scrollYProgress }}
-      />
-        <a onClick={clear} href="#home"><button className="fixed text-7xl bg-white">&#708;</button></a>
+        <motion.div
+          className="progress-bar"
+          style={{ scaleX: scrollYProgress }}
+        />
+        <a onClick={clear} href="#home">
+          <button className="fixed text-7xl bg-white">&#708;</button>
+        </a>
         <Nav />
         <Page1 reveal={reveal} />
-        <Page2 active={active}/>
+        <Page2 active={active} />
         <Page3 />
-        
       </main>
     </>
   );

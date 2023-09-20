@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-main{
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,43 +17,43 @@ main{
   background-repeat: no-repeat;
   background-position-y: -300px;
   background-position-x: -200px;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
-.animate-slidein{
+.animate-slidein {
   animation: slidein 1s;
 }
-.animate-slidein-delay{
+.animate-slidein-delay {
   animation: slidein 2s;
 }
 @keyframes slidein {
-  0%{
+  0% {
     transform: translateX(-100%);
   }
-  100%{
+  100% {
     transform: translateX(0%);
   }
 }
-.none{
+.none {
   display: none;
 }
 
 .right1 {
   transform: translateX();
 }
-.active{
+.active {
   animation: animeact 3s;
 }
-@keyframes animeact{
-  0%{
+@keyframes animeact {
+  0% {
     opacity: 0;
     transform: translateY(150px);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
-.fixed{
+.fixed {
   width: 50px;
   height: 50px;
   border-radius: 50%;
