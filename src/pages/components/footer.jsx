@@ -13,7 +13,6 @@ const Footer = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:border-b-2"
           href="https://steamcommunity.com/id/rimzss"
         >
           <BiLogoSteam />
