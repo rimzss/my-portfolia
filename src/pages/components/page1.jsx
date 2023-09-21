@@ -11,7 +11,7 @@ const Page1 = ({ reveal }) => {
         <h1 className="text-5xl font-sans animate-slidein-delay tracking-tighter">
           FAILING A LOT ALONG THE WAY
         </h1>
-        <div className="md:mt-80 mt-28 font-mono border-t-3 border-neutral-500">
+        <div className="md:mt-38 mt-28 font-mono border-t-3 border-neutral-500">
           <a href="#page2">
             <h3 onClick={reveal}>
               PROJECT 01:

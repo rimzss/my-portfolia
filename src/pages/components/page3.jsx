@@ -15,19 +15,19 @@ const Page3 = () => {
   return (
     <div
       id="page3"
-      className="text-white bg-purple w-screen h-screen p-20 flex flex-col items-center"
+      className="text-white bg-purple w-screen h-screen 2xl:p-20 p-6 flex flex-col items-center"
     >
       <div className="w-6/12">
         <div className="font-mono">
           <h1 className="font-bold">02</h1>
-          <h1 className="font-medium md:text-5xl text-pink-500">
+          <h1 className="font-medium 2xl:text-5xl text-2xl text-pink-500">
             GENSUS
             <span className="font-sans font-thin text-white">
               - World class UX for cutting edge data and business teams.
             </span>
           </h1>
         </div>
-        <div className="flex mt-16 relative z-0 overflow-hidden">
+        <div className="flex 2xl:mt-16 mt-5 relative z-0 overflow-hidden">
           <button
             onClick={moveRight}
             className="absolute text-6xl top-2/4 z-10"
@@ -44,7 +44,7 @@ const Page3 = () => {
             &#62;
           </button>
         </div>
-        <div className="mt-20">
+        <div className="2xl:mt-20 mt-5">
           <h1 className="font-mono font-bold">
             Project:<span className="font-sans font-thin">Gensus</span>
           </h1>

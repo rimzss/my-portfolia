@@ -66,6 +66,9 @@ export default function BasicMenu() {
             <li>Instagram</li>
           </a>
         </MenuItem>
+        <MenuItem>
+        <Link href="../contact">Contact</Link>
+        </MenuItem>
       </Menu>
     </div>
   );

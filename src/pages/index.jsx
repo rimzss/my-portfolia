@@ -6,6 +6,8 @@ import Nav from "./components/nav";
 import Page1 from "./components/page1";
 import Page2 from "./components/page2";
 import Page3 from "./components/page3";
+import Footer from "./components/footer";
+import { BiArrowToTop } from "react-icons/bi";
 import { useState } from "react";
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
@@ -36,12 +38,15 @@ export default function Home() {
           style={{ scaleX: scrollYProgress }}
         />
         <a onClick={clear} href="#home">
-          <button className="fixed text-7xl bg-white">&#708;</button>
+          <button className="fixed text-5xl bg-white">
+            <BiArrowToTop />
+          </button>
         </a>
         <Nav />
         <Page1 reveal={reveal} />
         <Page2 active={active} />
         <Page3 />
+        <Footer />
       </main>
     </>
   );

@@ -19,10 +19,10 @@ const about = () => {
       <main>
         <Nav />
         <div className=" text-white w-screen h-screen border-t border-neutral-500 flex flex-col items-center">
-          <div className="w-9/12 h-screen pt-80">
+          <div className="2xl:w-9/12 h-screen 2xl:pt-80 xl:pt-60 pt-20 2xl:pl-0 pl-3">
             <h1 className="text-5xl font-bold">
               I'M A{" "}
-              <span className="font-mono text-6xl text-black">
+              <span className="font-mono md:text-6xl text-3xl">
                 <Typewriter
                   words={["FRONTEND.", "BACKEND.", "DESIGNER.", "GAMER."]}
                   loop={0}
@@ -34,8 +34,8 @@ const about = () => {
                 />
               </span>
             </h1>
-            <div className="w-6/12">
-              <h3 className="font-sans font-thin text-2xl animate-slidein-delay">
+            <div className="md:w-6/12">
+              <h3 className="font-sans font-thin md:text-2xl text-xl animate-slidein-delay">
                 I'm a full stack developer stundent, front-end tinkerer. I love
                 video games, movies and codes. I'm interested in building
                 beautiful, functional digital experiences that make people's
