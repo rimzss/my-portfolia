@@ -10,6 +10,8 @@ import Footer from "./components/footer";
 import { BiArrowToTop } from "react-icons/bi";
 import { useState } from "react";
 const inter = Inter({ subsets: ["latin"] });
+
+
 export default function Home() {
   const { scrollYProgress } = useScroll();
 
@@ -21,6 +23,8 @@ export default function Home() {
   const clear = () => {
     setActive("");
   };
+
+  
   return (
     <>
       <Head>

@@ -21,7 +21,7 @@ const contact = () => {
         <Nav />
         <div className=" text-white w-screen h-screen border-t border-neutral-500 flex flex-col items-center justify-center">
           <h3 className="text-5xl">Contact me</h3>
-          <div className="m-48 text-2xl w-2/4">
+          <div className="m-48 text-2xl w-2/4 ">
             <TextField id="filled-basic" label="Your Mail" variant="filled" />
             <h4 className="mt-5"></h4>
             <TextField

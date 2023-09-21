@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { images } from "../../data/images";
+import Slider from "./slider";
 
 const Page3 = () => {
   let [moveClass, setMoveClass] = useState("");
@@ -27,22 +28,8 @@ const Page3 = () => {
             </span>
           </h1>
         </div>
-        <div className="flex 2xl:mt-16 mt-5 relative z-0 overflow-hidden">
-          <button
-            onClick={moveRight}
-            className="absolute text-6xl top-2/4 z-10"
-          >
-            &#60;
-          </button>
-          {images.map((image) => {
-            return <img src={image} alt="" />;
-          })}
-          <button
-            onClick={moveRight}
-            className="absolute text-6xl right-0 top-2/4 z-10"
-          >
-            &#62;
-          </button>
+        <div className="2xl:mt-16 mt-5">
+          <Slider />
         </div>
         <div className="2xl:mt-20 mt-5">
           <h1 className="font-mono font-bold">

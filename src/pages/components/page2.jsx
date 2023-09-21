@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { images } from "../../data/images";
+import Slider from "./slider";
 
 const Page2 = ({ active }) => {
   const style = "w-6/12";
@@ -28,10 +29,8 @@ const Page2 = ({ active }) => {
               </span>
             </h1>
           </div>
-          <div className="flex 2xl:mt-16 mt-5 relative z-0 overflow-hidden">
-            {images.map((image) => {
-              return <img src={image} alt="" />;
-            })}
+          <div className="2xl:mt-16 mt-5">
+            <Slider />
           </div>
           <div className="2xl:mt-20 mt-5">
             <h1 className="font-mono font-bold">
