@@ -5,7 +5,7 @@ const Page1 = ({ reveal }) => {
   console.log(reveal);
   return (
     <div className="panel text-white w-screen md:h-screen border-t-3 border-neutral-500  flex flex-col items-center">
-      <div className="md:w-6/12 w-full h-screen pt-80 md:pl-0 md:border-l-3 border-neutral-500 p-3">
+      <div className="md:w-6/12 w-full h-screen md:pt-80 pt-72 md:pl-0  md:border-l-3 border-neutral-500 p-3">
         <h1 className="text-7xl font-bold animate-slidein">
           SOLVING BIG PROBLEMS
         </h1>
