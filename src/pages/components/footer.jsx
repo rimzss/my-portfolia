@@ -1,6 +1,7 @@
 import React from "react";
 import { BiLogoSteam } from "react-icons/bi";
 import { BiLogoDiscordAlt } from "react-icons/bi";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
@@ -20,6 +21,16 @@ const Footer = () => {
         </a>
         <BiLogoDiscordAlt />
       </div>
+      <motion.div
+        className="w-20 h-20 bg-white rounded-full"
+        drag
+        dragConstraints={{
+          top: -200,
+          left: -200,
+          righ: 0,
+          bottom: 50,
+        }}
+      />
     </footer>
   );
 };
