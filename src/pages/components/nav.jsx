@@ -10,7 +10,7 @@ const Nav = () => {
     >
       <h1 className="text-4xl">BILGUUN BATTUGS</h1>
       <ul className="hidden gap-5 font-sans font-thin md:flex">
-        <Link className="hover:border-b-2" href="http://localhost:3000/">
+        <Link className="hover:border-b-2" href="">
           Home
         </Link>
         <Link className="hover:border-b-2" href="../about">
