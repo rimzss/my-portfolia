@@ -10,7 +10,10 @@ const Nav = () => {
     >
       <h1 className="text-4xl">BILGUUN BATTUGS</h1>
       <ul className="hidden gap-5 font-sans font-thin md:flex">
-        <Link className="hover:border-b-2" href="">
+        <Link
+          className="hover:border-b-2"
+          href="https://my-portfolia-one.vercel.app/"
+        >
           Home
         </Link>
         <Link className="hover:border-b-2" href="../about">
