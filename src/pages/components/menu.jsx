@@ -37,7 +37,10 @@ export default function BasicMenu() {
         }}
       >
         <MenuItem onClick={handleClose}>
-          <Link className="hover:border-b-2" href="http://localhost:3000/">
+          <Link
+            className="hover:border-b-2"
+            href="https://my-portfolia-one.vercel.app/"
+          >
             Home
           </Link>
         </MenuItem>
@@ -67,7 +70,7 @@ export default function BasicMenu() {
           </a>
         </MenuItem>
         <MenuItem>
-        <Link href="../contact">Contact</Link>
+          <Link href="../contact">Contact</Link>
         </MenuItem>
       </Menu>
     </div>

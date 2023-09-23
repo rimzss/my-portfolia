@@ -10,16 +10,19 @@ const Nav = () => {
     >
       <h1 className="text-4xl">BILGUUN BATTUGS</h1>
       <ul className="hidden gap-5 font-sans font-thin md:flex">
-        <Link className="hover:border-b-2" href="http://localhost:3000/">
+        <Link className="view" href="https://my-portfolia-one.vercel.app/">
           Home
         </Link>
-        <Link className="hover:border-b-2" href="../about">
+        <Link className="view" href="../about">
           About
+        </Link>
+        <Link className="view" href="../contact">
+          Contact
         </Link>
         <a
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:border-b-2"
+          className="view"
           href="https://www.facebook.com/bekub.bilguun/"
         >
           <li>Facebook</li>
@@ -27,14 +30,11 @@ const Nav = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:border-b-2"
+          className="view"
           href="https://www.instagram.com/rimzss/"
         >
           <li>Instagram</li>
         </a>
-        <Link className="hover:border-b-2" href="../contact">
-          Contact
-        </Link>
       </ul>
       <li className="block md:hidden">
         <BasicMenu />

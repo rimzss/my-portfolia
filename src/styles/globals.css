@@ -8,6 +8,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+body {
+  cursor: none;
+}
 main {
   display: flex;
   flex-direction: column;
@@ -81,4 +84,32 @@ main {
   height: 2px;
   transition: width 400ms ease;
   width: 0;
+}
+
+/* Cursor */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+  mix-blend-mode: difference;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.cursor-text {
+  font-size: 5px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: black;
+  display: none;
+}
+a {
+  cursor: none;
 }
