@@ -1,28 +1,21 @@
 import React, { useState } from "react";
 import { images } from "../../data/images";
 import Slider from "./slider";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
-const Page2 = ({ active }) => {
+const Page2 = () => {
   const style = "xl:w-6/12 lg:w-3/4";
-  let [moveClass, setMoveClass] = useState("");
-  const moveRight = () => {
-    setMoveClass("-translate-x-full");
-  };
-  const moveLeft = () => {
-    setMoveClass("");
-  };
-  console.log(active);
+  const { scrollYProgress } = useScroll({
+    offset: ["70vh", "100vh"],
+  });
   return (
     <section>
       <div id="page2" className="panel bg-white w-screen h-screen p-6 flex ">
         <motion.div
           className="flex flex-col items-center justify-center"
-          initial={{ opacity: 0, y: 500 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          style={{ opacity: scrollYProgress }}
         >
-          <div className={`${style} ${active}`}>
+          <div className="xl:w-6/12 lg:w-3/4">
             <div className="font-mono">
               <h1 className="font-bold">01</h1>
               <h1 className="font-medium 2xl:text-5xl text-2xl text-blue-200">

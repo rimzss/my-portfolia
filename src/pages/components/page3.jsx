@@ -1,25 +1,19 @@
 import React, { useState } from "react";
 import { images } from "../../data/images";
 import Slider from "./slider";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 const Page3 = () => {
-  let [moveClass, setMoveClass] = useState("");
-  const moveRight = () => {
-    setMoveClass("-translate-x-full");
-    console.log("working", moveClass);
-    switch (moveClass) {
-      case "-translate-x-full": {
-        break;
-      }
-    }
-  };
+  const { scrollYProgress } = useScroll({
+    offset: ["170vh", "200vh"],
+  });
   return (
     <div id="page3" className="text-white bg-purple w-screen h-screen p-6 flex">
       <motion.div
         className="flex flex-col items-center justify-center"
-        initial={{ opacity: 0, y: 500 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        // initial={{ opacity: 0, y: 500 }}
+        // whileInView={{ opacity: 1, y: 0 }}
+        style={{ opacity: scrollYProgress }}
       >
         <div className="xl:w-6/12 lg:w-3/4">
           <div className="font-mono">
